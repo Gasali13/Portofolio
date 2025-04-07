@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #062f5c;
+    color: #f0f0dc;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #001b36;
+}
+
+.navbar .logo {
+    color: white;
+    font-weight: bold;
+    padding-left: 120px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding-right: 120px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 150px;
+    color: white;
+}
+
+.hero-text p {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.hero-text h2 {
+    font-size: 2rem;
+}
+
+/* About Section */
+#about {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.profil-img {
+    width: 325px;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.info ul {
+    list-style-position: inside;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+
+.info div h4 {
+    margin-bottom: 10px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 180px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.info-card {
+    max-width: 250px;
+}
+
+.info-card img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.info-card h4 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.info-card ul {
+    list-style-position: inside;
+    padding-left: 0;
+    margin-left: 0;
+    text-align: left;
+}
+
+/* Portfolio */
+#portfolio {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.portfolio-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.portfolio-gallery .item {
+    width: 300px;
+}
+
+.portfolio-gallery img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Contact */
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.contact-icons div img {
+    width: 40px;
+    margin-bottom: 10px;
+}
