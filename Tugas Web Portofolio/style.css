@@ -6,8 +6,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #062f5c;
-    color: #f0f0dc;
+    background-color: #002349;
+    color: #E0E4CA;
 }
 
 /* Navbar */
@@ -16,13 +16,14 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #001b36;
+    background-color: #002349;
 }
 
 .navbar .logo {
     color: white;
     font-weight: bold;
     padding-left: 120px;
+    font-size: 1.2rem;
 }
 
 .navbar ul {
@@ -39,6 +40,7 @@ body {
 
 /* Hero Section */
 .hero {
+    position: relative;
     background-image: url('images/background.png');
     background-size: cover;
     background-position: center;
@@ -46,26 +48,46 @@ body {
     display: flex;
     align-items: center;
     padding-left: 150px;
-    color: white;
+    z-index: 1;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgb(0, 35, 75, 1), rgba(0, 35, 75, 0.4), transparent);
+    z-index: 0;
+}
+
+
+.hero-text {
+    z-index: 1;
 }
 
 .hero-text p {
     font-weight: 600;
-    font-size: 1.2rem;
+    color: #E0E4CA;
+    font-size: 1.5rem;
 }
 
 .hero-text h2 {
     font-size: 2rem;
+    color: white;
 }
 
 /* About Section */
 #about {
+    font-size: 2rem;
     text-align: center;
     padding: 50px 20px;
+    color: #E0E4CA;
 }
 
 .profil-img {
-    width: 325px;
+    width: 400px;
     border-radius: 20px;
     margin: 20px 0;
 }
@@ -73,29 +95,17 @@ body {
 .info {
     display: flex;
     justify-content: center;
-    gap: 50px;
-    margin-top: 30px;
-    flex-wrap: wrap;
-}
-
-.info ul {
-    list-style-position: inside;
-    padding-left: 0;
-    margin-left: 0;
-}
-
-
-.info div h4 {
-    margin-bottom: 10px;
-}
-
-.info {
-    display: flex;
-    justify-content: center;
-    gap: 180px;
+    gap: 265px;
     flex-wrap: wrap;
     margin-top: 30px;
     text-align: center;
+}
+
+.info div h4 {
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 1.9rem;
+    color: #E0E4CA;
 }
 
 .info-card {
@@ -103,14 +113,14 @@ body {
 }
 
 .info-card img {
-    width: 50px;
+    width: 70px;
     margin-bottom: 10px;
 }
 
 .info-card h4 {
     margin-bottom: 10px;
     font-size: 1.1rem;
-    color: #fff;
+    color: white
 }
 
 .info-card ul {
@@ -118,10 +128,12 @@ body {
     padding-left: 0;
     margin-left: 0;
     text-align: left;
+    font-size: 1rem;
 }
 
 /* Portfolio */
 #portfolio {
+    font-size: 2rem;
     padding: 50px 20px;
     text-align: center;
 }
@@ -129,22 +141,30 @@ body {
 .portfolio-gallery {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 70px;
     flex-wrap: wrap;
     margin-top: 20px;
 }
 
 .portfolio-gallery .item {
-    width: 300px;
+    width: 540px;
 }
 
 .portfolio-gallery img {
     width: 100%;
-    border-radius: 10px;
+}
+
+.portfolio-gallery p{
+    font-size: 1.5rem;
+    text-align: left;
+    color: white;
+    font-weight: bold;
 }
 
 /* Contact */
 #contact {
+    font-size: 2rem;
+    font-weight: bold;
     padding: 50px 20px;
     text-align: center;
 }
@@ -152,12 +172,17 @@ body {
 .contact-icons {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 120px;
     flex-wrap: wrap;
     margin-top: 20px;
 }
 
 .contact-icons div img {
-    width: 40px;
+    width: 80px;
     margin-bottom: 10px;
+}
+
+.contact-icons p{
+    color: white;
+    font-size: 1.5rem;
 }
