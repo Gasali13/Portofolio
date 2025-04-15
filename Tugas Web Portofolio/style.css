@@ -15,7 +15,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
     background-color: #002349;
 }
 
@@ -39,7 +39,7 @@ body {
 }
 
 /* Hero Section */
-.hero {
+.home {
     position: relative;
     background-image: url('images/background.png');
     background-size: cover;
@@ -51,7 +51,8 @@ body {
     z-index: 1;
 }
 
-.hero::before {
+
+.home::before {
     content: "";
     position: absolute;
     top: 0;
@@ -63,17 +64,17 @@ body {
 }
 
 
-.hero-text {
+.home-text {
     z-index: 1;
 }
 
-.hero-text p {
+.home-text p {
     font-weight: 600;
     color: #E0E4CA;
     font-size: 1.5rem;
 }
 
-.hero-text h2 {
+.home-text h2 {
     font-size: 2rem;
     color: white;
 }
